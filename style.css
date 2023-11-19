@@ -1,0 +1,11 @@
+.blocks{
+    position: relative;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputs{
+    position: relative;
+    width: 200px;
+}
