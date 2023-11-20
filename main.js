@@ -131,7 +131,7 @@ window.onload = function () {
     function render() {
         graph.clear();
         printOXY();
-        funcs.forEach(func => func && printFunction(func.f, func.color, func.width))
+        funcs.forEach(func => func && printFunction(func.f, 100))
     }
     render();
 }
