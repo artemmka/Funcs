@@ -7,7 +7,7 @@ window.onload = function () {
     };
     const funcs = [
         {
-            f: (x) => x * x,
+            f: (x) => undefined,
             color: '#f0f',
             width: 2,
         }
@@ -50,10 +50,6 @@ window.onload = function () {
             render();
         }
     }
-    let a = document.getElementById('a');
-    let b = document.getElementById('b');
-    let button = document.getElementById('button');
-    let result = document.getElementById('result');
     var graph = new Graph({
         id: 'canvas',
         width: 400,
@@ -71,21 +67,6 @@ window.onload = function () {
             if (f(a) * f(half) <= 0) return getZero(f, a, half, eps);
             if (f(half) * f(b) <= 0) return getZero(f, half, b, eps);
         }
-    }
-    function getZeros(f, n = 300) {
-        const segments = [];
-        let a = WIN.LEFT;
-        const dx = WIN.WIDTH / n;
-        let b = WIN.LEFT;
-        while (x <= WIN.WIDTH + WIN.LEFT) {
-            if (f(a) * f(b) < 0) {
-                segments.push({ a, b });
-                a = b;
-            }
-            b += dx;
-        }
-        segments.forEach(({ a, b }) => getZero)
-        console.log(segments);
     }
     var ZOOM_STEP = 0.2;
     function wheel(event) {

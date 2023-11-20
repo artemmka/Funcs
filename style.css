@@ -1,12 +1,23 @@
 .blocks{
     position: relative;
     display: flex;
-    width: 400px;
-    height: 200px;
+    width: 20px;
+    height:20px;
     justify-content: space-around;
     align-items: center;
 }
 .inputs{
     position: relative;
     width: 200px;
+}
+#funcInputs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#window{
+    position: relative;
+    display: flex;
+    width: 400px;
 }
